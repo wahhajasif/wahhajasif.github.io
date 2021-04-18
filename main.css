@@ -1,17 +1,12 @@
-<style>
-nav a {
-  color: black;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-nav li {
+/* nav li {
   display: inline;
-  padding: 20px;
-}
-nav li:hover {
-  background-color: lightgrey;
-  cursor: pointer;
-  transition: 1s;
-}
+} */
 .spacer {
   height: 20px;
 }
@@ -43,4 +38,100 @@ body {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
-</style>
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: lightgrey;
+}
+
+.logo {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: grid;
+  width: 35%;
+  grid-auto-flow: column;
+  place-items: center;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  list-style: none;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links a {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  background-color: grey;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.burger {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    z-index: 10;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    place-items: center;
+
+    position: absolute;
+    opacity: 0.1;
+
+    top: -40vh;
+    height: 40vh;
+
+    background-color: lightgrey;
+
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  top: 8vh;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
