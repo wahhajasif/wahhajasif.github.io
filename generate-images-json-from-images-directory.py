@@ -3,7 +3,7 @@ import os
 
 image_files_list = []
 
-for image in os.listdir("./images"):
+for image in sorted(os.listdir("./images")):
     image_files_list.append(image)
 
 json_s = json.dumps(image_files_list, indent=2)
