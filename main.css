@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+:root {
+  --verylightgrey: rgb(247, 247, 247);
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* nav li {
+  display: inline;
+} */
+.spacer {
+  height: 20px;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+  min-height: 8vh;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  list-style: none;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+a:visited {
+  color: black;
+}
+
+.nav-links a {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.nav-links a:hover {
+  background-color: grey;
+  background-color: var(--verylightgrey);
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.burger {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    z-index: 10;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    place-items: center;
+    overflow: hidden;
+    top: 8vh;
+
+    position: absolute;
+    height: 0vh;
+
+    background-color: var(--verylightgrey);
+
+    transition: height 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  height: 40vh;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
