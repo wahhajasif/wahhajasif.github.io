@@ -13,9 +13,9 @@ export default [
   "wahhaj-asif-screenshot000.jpg",
   "wahhaj-asif-screenshot003 (1).jpg",
   "wahhaj-sheikh-blenderdnoise500samplesuntitled2.jpg",
+  "0-render002.jpg",
   "wahhaj-sheikh-blenderdnoise500samplesuntitled4.jpg",
   "wahhaj-asif-screenshot000-p.jpg",
   "wahhaj-asif-screenshot006.jpg",
-  "render002.jpg",
   "wahhaj-asif-screenshot005.jpg"
 ];
