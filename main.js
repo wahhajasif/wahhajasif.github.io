@@ -1,12 +1,16 @@
 import images from "./images.js";
 
 const addImages = () => {
-  const main = document.querySelector("main.container");
+  const main = document.querySelector(".photos-container");
   images.forEach((imageName) => {
     const img = document.createElement("img");
     img.src = `images/${imageName}`;
     main.appendChild(img);
   });
+
+  // element argument can be a selector string
+  //   for an individual element
+  // var msnry = new Masonry(main);
 };
 
 const navSlide = () => {

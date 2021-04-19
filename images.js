@@ -1,1 +1,20 @@
-export default ["0.jpg", "1.jpg", "16.jpg", "30.jpg", "76.jpg"];
+export default [
+  "wahhaj-asif-4.jpg",
+  "wahhaj-asif-1.jpg",
+  "wahhaj-asif-screenshot012.jpg",
+  "wahhaj-asif-screenshot003.jpg",
+  "wahhaj-asif-screenshot000 (1).jpg",
+  "wahhaj-asif-capture.jpg",
+  "wahhaj-asif-screenshot005.jpg",
+  "wahhaj-asif-screenshot003 (1).jpg",
+  "wahhaj-asif-2.jpg",
+  "wahhaj-asif-screenshot006.jpg",
+  "wahhaj-asif-screenshot000-p.jpg",
+  "wahhaj-sheikh-blenderdnoise500samplesuntitled2.jpg",
+  "wahhaj-sheikh-dcar-6.jpg",
+  "wahhaj-asif-screenshot000.jpg",
+  "wahhaj-asif-screenshot001 (1).jpg",
+  "wahhaj-asif-capture (1).jpg",
+  "wahhaj-asif-screenshot001.jpg",
+  "wahhaj-sheikh-blenderdnoise500samplesuntitled4.jpg"
+];
