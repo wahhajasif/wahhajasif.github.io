@@ -1,5 +1,11 @@
 export default [
   "0-render002.jpg",
+  "chair2.jpg",
+  "final.g1.jpg",
+  "finaltrash.jpg",
+  "room.jpg",
+  "untitled.jpg",
+  "untitled1.jpg",
   "wahhaj-asif-1.jpg",
   "wahhaj-asif-2.jpg",
   "wahhaj-asif-4.jpg",
