@@ -5,6 +5,7 @@ const addImages = () => {
   images.forEach((imageName) => {
     const img = document.createElement("img");
     img.src = `images/${imageName}`;
+    img.loading = "lazy";
     main.appendChild(img);
   });
 
