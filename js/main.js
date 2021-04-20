@@ -29,6 +29,10 @@ function loadNextImageAfterFirstImageLoaded(
     onAllImagesLoaded: () => console.log("ALL images loaded"),
   }
 ) {
+  if (images.length == 0) {
+    props.onAllImagesLoaded();
+    return;
+  }
   const main = document.querySelector(".photos-container");
   const currentImg = document.createElement("img");
 

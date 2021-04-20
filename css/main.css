@@ -30,7 +30,12 @@ nav {
   justify-content: start;
   align-items: center;
   min-height: 8vh;
+}
+
+nav > *:first-child {
   padding-left: 15px;
+}
+nav > *:last-child {
   padding-right: 15px;
 }
 
