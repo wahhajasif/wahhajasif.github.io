@@ -12,5 +12,7 @@ for image in sorted(os.listdir("./images")):
 json_s = json.dumps(image_files_list, indent=2)
 js_string = f"export default {json_s};"
 
+print(f"found these images: {json_s}")
+
 with open("js/images.js", "w") as f:
     f.write(js_string)
