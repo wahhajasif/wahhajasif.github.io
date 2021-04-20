@@ -65,6 +65,10 @@ a:visited {
   color: black;
 }
 
+a {
+  color: black;
+}
+
 .nav-links a {
   text-align: center;
   padding: 20px;
