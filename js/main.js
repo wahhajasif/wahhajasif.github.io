@@ -1,10 +1,11 @@
 import images from "./images.js";
 
 const addImages = () => {
-  // images.forEach((imageName) => {
-  //   `images/${imageName}`;
-  // });
   const imageURLs = images.map((imageFilename) => "images/" + imageFilename);
+
+  const onImgLoad = (img) => {
+    img.classList.remove("invisible");
+  };
 
   const onAllImagesLoaded = () => {
     document.querySelectorAll(".loading-images-message").forEach((e) => {
@@ -12,31 +13,40 @@ const addImages = () => {
     });
   };
 
-  loadNextImageAfterFirstImageLoaded(imageURLs, 0, onAllImagesLoaded);
-
-  // element argument can be a selector string
-  //   for an individual element
-  // var msnry = new Masonry(main);
+  loadNextImageAfterFirstImageLoaded(imageURLs, 0, {
+    onAllImagesLoaded: onAllImagesLoaded,
+    imgClassList: [],
+    onImgLoad: onImgLoad,
+  });
 };
 
 function loadNextImageAfterFirstImageLoaded(
   images = [],
   index = 0,
-  onAllImagesLoaded = () => console.log("ALL images loaded")
+  props = {
+    imgClassList: [""],
+    onImgLoad: (img) => console.log(`${img} loaded`),
+    onAllImagesLoaded: () => console.log("ALL images loaded"),
+  }
 ) {
   const main = document.querySelector(".photos-container");
-  const img = document.createElement("img");
-  img.loading = "lazy";
-  img.src = images[index];
-  main.appendChild(img);
+  const currentImg = document.createElement("img");
 
-  img.onload = () => {
+  currentImg.src = images[index];
+
+  main.appendChild(currentImg);
+
+  currentImg.onload = () => {
+    props.onImgLoad(currentImg);
+
     if (images.length - 1 == index) {
-      onAllImagesLoaded();
-    } else
-      loadNextImageAfterFirstImageLoaded(images, index + 1, onAllImagesLoaded);
+      props.onAllImagesLoaded();
+    } else {
+      loadNextImageAfterFirstImageLoaded(images, index + 1, props);
+    }
   };
-  img.onerror = img.onload;
+  currentImg.onerror = currentImg.onload;
+  currentImg.classList.add(...props.imgClassList);
 }
 
 const navSlide = () => {
