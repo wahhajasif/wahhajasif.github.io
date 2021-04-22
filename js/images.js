@@ -1,3 +1,27 @@
 export default [
-  "delete-this-file.png"
+  "0-render002.jpg",
+  "chair2.jpg",
+  "delete-this-file.png",
+  "final.g1.jpg",
+  "finaltrash.jpg",
+  "room.jpg",
+  "untitled.jpg",
+  "untitled1.jpg",
+  "wahhaj-asif-1.jpg",
+  "wahhaj-asif-2.jpg",
+  "wahhaj-asif-4.jpg",
+  "wahhaj-asif-capture.jpg",
+  "wahhaj-asif-screenshot000 (1).jpg",
+  "wahhaj-asif-screenshot000-p.jpg",
+  "wahhaj-asif-screenshot000.jpg",
+  "wahhaj-asif-screenshot001 (1).jpg",
+  "wahhaj-asif-screenshot001.jpg",
+  "wahhaj-asif-screenshot003 (1).jpg",
+  "wahhaj-asif-screenshot003.jpg",
+  "wahhaj-asif-screenshot005.jpg",
+  "wahhaj-asif-screenshot006.jpg",
+  "wahhaj-asif-screenshot012.jpg",
+  "wahhaj-sheikh-blenderdnoise500samplesuntitled2.jpg",
+  "wahhaj-sheikh-blenderdnoise500samplesuntitled4.jpg",
+  "wahhaj-sheikh-dcar-6.jpg"
 ];
