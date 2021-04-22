@@ -1,7 +1,4 @@
 export default [
-  "untitled1.jpg",
-  "wahhaj-asif-1.jpg",
-  "wahhaj-asif-2.jpg",
   "wahhaj-asif-4.jpg",
   "wahhaj-asif-capture (1).jpg",
   "wahhaj-asif-capture.jpg",
