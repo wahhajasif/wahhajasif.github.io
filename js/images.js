@@ -1,5 +1,4 @@
 export default [
-  "0-render002.jpg",
   "chair2.jpg",
   "final.g1.jpg",
   "finaltrash.jpg",
