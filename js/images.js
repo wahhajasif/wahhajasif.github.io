@@ -1,7 +1,6 @@
 export default [
   "0-render002.jpg",
   "chair2.jpg",
-  "delete-this-file.png",
   "final.g1.jpg",
   "finaltrash.jpg",
   "room.jpg",
