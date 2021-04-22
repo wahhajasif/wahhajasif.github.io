@@ -1,5 +1,4 @@
 export default [
-  "final.g1.jpg",
   "finaltrash.jpg",
   "room.jpg",
   "untitled.jpg",
