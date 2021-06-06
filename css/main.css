@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 :root {
-  --verylightgrey: rgb(247, 247, 247);
+  --verylightgrey: rgb(224, 224, 224);
 }
 
 body {
   font-family: "Noto Sans", sans-serif;
+}
+
+body > * {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 * {
@@ -151,3 +156,32 @@ a.social-link-section > span {
     width: 60%;
   }
 } */
+
+.tabs-bar {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  background-color: var(--verylightgrey);
+  border-radius: 10px;
+}
+
+.tabs-bar > .tab {
+  padding: 20px;
+}
+
+/* .tabs-bar > .tab:first-child {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.tabs-bar > .tab:last-child {
+  border-radius: 0px 10px 10px 0px;
+} */
+
+.tabs-bar > .tab.selected {
+  background-color: white;
+}
+
+.tabs-bar > .tab:hover {
+  background-color: grey;
+  cursor: pointer;
+}

@@ -1,3 +1,4 @@
+from glob import glob
 import json
 import os
 
@@ -6,8 +7,10 @@ os.makedirs(IMAGES_DIR, exist_ok=True)
 
 image_files_list = []
 
-for image in sorted(os.listdir("./images")):
-    image_files_list.append(image)
+for root, dirs, files in os.walk("images", topdown=False):
+    for name in files:
+        image = os.path.join(root, name).replace('\\', '/')
+        image_files_list.append(image)
 
 json_s = json.dumps(image_files_list, indent=2)
 js_string = f"export default {json_s};"
