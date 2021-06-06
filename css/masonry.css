@@ -8,8 +8,8 @@
   column-count: 3;
   column-gap: 10px;
   line-height: 2;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
 }
 
 .photos-container img {
